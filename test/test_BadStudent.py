@@ -45,8 +45,8 @@ class TestBadStudent:
         assert input_data[0] == bad_students.data
 
     def test_calc_students_with_debts(
-self, input_data: tuple[DataType, int]
-) -> None:
+	self, input_data: tuple[DataType, int]
+    ) -> None:
         bad_students = BadStudent(input_data[0])
         students_with_debts_count = bad_students.calc()
         assert students_with_debts_count == input_data[1]
